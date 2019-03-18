@@ -5,5 +5,4 @@ projects:
   srp-events:
     type: library
     model: virion
-    path: src/jacknoordhuis/srp/events
 ...
