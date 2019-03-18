@@ -89,8 +89,8 @@ class SeeIfNewPlayerHandler extends \jacknoordhuis\srp\events\EventHandler {
 }
 ```
 
-For your continence the `jacknoordhuis\srp\events\EventHandler` has a method to retrieve the plugin which it was registered
-from:
+For your continence the `jacknoordhuis\srp\events\EventHandler` class has a method to retrieve the plugin which it was
+registered from:
 ```php
 use jacknoordhuis\srp\events\HandlerList;
 
