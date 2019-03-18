@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at projects:
+branches:
+  - 'master'
+projects:
+  srp-events:
+    type: library
+    model: virion
+    path: src/jacknoordhuis/srp/events
+...
