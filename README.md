@@ -69,7 +69,7 @@ And:
 ```php
 use jacknoordhuis\srp\events\HandlerList;
 
-class SeeIfNewPlayerHandler extends \jacknoordhuis\srp\events\EventHandler {
+class ChatFilterHandler extends \jacknoordhuis\srp\events\EventHandler {
     public function handles(HandlerList $list) : void {
         $list->handler('playerChat')
             ->event(\pocketmine\event\player\PlayerChatEvent::class)
@@ -94,12 +94,12 @@ registered from:
 ```php
 use jacknoordhuis\srp\events\HandlerList;
 
-class SeeIfNewPlayerHandler extends \jacknoordhuis\srp\events\EventHandler {
+class PlayerDamageHandler extends \jacknoordhuis\srp\events\EventHandler {
     public function handles(HandlerList $list) : void {
         //setup handler
     }
     
-    public function playerChat(pocketmine\event\entity\EntityDamageEvent $e) : void {
+    public function onDamage(pocketmine\event\entity\EntityDamageEvent $e) : void {
         $this->getPlugin()->getLogger()->debug("damage event");
     }
 }
